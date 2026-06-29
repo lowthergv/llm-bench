@@ -1,0 +1,1018 @@
+{
+  "meta": {
+    "host": "MacBook Pro M4 Pro \u00b7 48GB",
+    "runtime": "Ollama 0.30.6 (MLX Metal backend)",
+    "date": "2026-06-17 23:52",
+    "ctx": 8192,
+    "temp": 0.0,
+    "judge": "gpt-oss:20b",
+    "n_tasks": 22
+  },
+  "weights": {
+    "coding": 0.25,
+    "reasoning": 0.2,
+    "agentic": 0.2,
+    "writing": 0.15,
+    "instruction": 0.1,
+    "longcontext": 0.1
+  },
+  "summary": {
+    "qwen3.5:latest": {
+      "categories": {
+        "coding": 1.0,
+        "reasoning": 1.0,
+        "agentic": 1.0,
+        "writing": 0.6667,
+        "instruction": 0.875,
+        "longcontext": 1.0
+      },
+      "overall": 0.9375,
+      "n_scored": 22,
+      "speed": {
+        "cold_load_s": 3.11,
+        "decode_tps": {
+          "mean": 38.58,
+          "stdev": 0.02,
+          "min": 38.56,
+          "max": 38.6
+        },
+        "prefill_tps": {
+          "mean": 390.19,
+          "stdev": 10.53,
+          "min": 378.07,
+          "max": 397.06
+        },
+        "resident_gb": 5.49,
+        "reps": 3
+      }
+    },
+    "gemma4:e4b": {
+      "categories": {
+        "coding": 1.0,
+        "reasoning": 1.0,
+        "agentic": 1.0,
+        "writing": 0.8333,
+        "instruction": 1.0,
+        "longcontext": 1.0
+      },
+      "overall": 0.975,
+      "n_scored": 22,
+      "speed": {
+        "cold_load_s": 6.4,
+        "decode_tps": {
+          "mean": 58.78,
+          "stdev": 0.06,
+          "min": 58.75,
+          "max": 58.84
+        },
+        "prefill_tps": {
+          "mean": 466.57,
+          "stdev": 5.29,
+          "min": 462.49,
+          "max": 472.55
+        },
+        "resident_gb": 8.9,
+        "reps": 3
+      }
+    },
+    "gpt-oss:20b": {
+      "categories": {
+        "coding": 1.0,
+        "reasoning": 1.0,
+        "agentic": 1.0,
+        "instruction": 1.0,
+        "longcontext": 1.0
+      },
+      "overall": 1.0,
+      "n_scored": 19,
+      "speed": {
+        "cold_load_s": 0.17,
+        "decode_tps": {
+          "mean": 53.85,
+          "stdev": 0.09,
+          "min": 53.74,
+          "max": 53.91
+        },
+        "prefill_tps": {
+          "mean": 985.95,
+          "stdev": 565.49,
+          "min": 333.02,
+          "max": 1318.11
+        },
+        "resident_gb": 11.96,
+        "reps": 3
+      }
+    },
+    "qwen3-coder:30b": {
+      "categories": {
+        "coding": 1.0,
+        "reasoning": 1.0,
+        "agentic": 1.0,
+        "writing": 0.8333,
+        "instruction": 0.875,
+        "longcontext": 1.0
+      },
+      "overall": 0.9625,
+      "n_scored": 22,
+      "speed": {
+        "cold_load_s": 9.24,
+        "decode_tps": {
+          "mean": 74.95,
+          "stdev": 0.55,
+          "min": 74.42,
+          "max": 75.52
+        },
+        "prefill_tps": {
+          "mean": 1185.72,
+          "stdev": 90.64,
+          "min": 1103.75,
+          "max": 1283.06
+        },
+        "resident_gb": 17.95,
+        "reps": 3
+      }
+    }
+  },
+  "records": [
+    {
+      "model": "qwen3.5:latest",
+      "category": "coding",
+      "task_id": "code_rle",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 38.78612070240763,
+      "wall_s": 3.95
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "coding",
+      "task_id": "code_balanced",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 38.85972732544343,
+      "wall_s": 3.19
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "coding",
+      "task_id": "code_merge",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 38.7616108328735,
+      "wall_s": 4.21
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "coding",
+      "task_id": "code_wordfreq",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 38.80898816165824,
+      "wall_s": 3.04
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "reasoning",
+      "task_id": "reas_tank",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 0.5 want 0.5",
+      "decode_tps": 38.48928588803311,
+      "wall_s": 14.0
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "reasoning",
+      "task_id": "reas_train",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 5.5 want 5.5",
+      "decode_tps": 38.412061798228834,
+      "wall_s": 10.22
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "reasoning",
+      "task_id": "reas_interest",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 5624.32 want 5624.32",
+      "decode_tps": 38.28576125318824,
+      "wall_s": 17.39
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "reasoning",
+      "task_id": "reas_acid",
+      "type": "mc",
+      "score": 1.0,
+      "detail": "got B want B",
+      "decode_tps": 38.23398206169263,
+      "wall_s": 9.78
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "reasoning",
+      "task_id": "reas_syllogism",
+      "type": "mc",
+      "score": 1.0,
+      "detail": "got B want B",
+      "decode_tps": 38.01582528499114,
+      "wall_s": 16.58
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "agentic",
+      "task_id": "agent_weather",
+      "type": "tool_call",
+      "score": 1.0,
+      "detail": "name_ok=True args_ok=True",
+      "decode_tps": 39.80825689595117,
+      "wall_s": 1.26
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "agentic",
+      "task_id": "agent_decline",
+      "type": "tool_call",
+      "score": 1.0,
+      "detail": "correctly declined",
+      "decode_tps": 41.944869189205676,
+      "wall_s": 1.0
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "agentic",
+      "task_id": "agent_order_json",
+      "type": "json_schema",
+      "score": 1.0,
+      "detail": "9/9",
+      "decode_tps": 39.45030925343988,
+      "wall_s": 1.46
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "agentic",
+      "task_id": "agent_feedback_json",
+      "type": "json_schema",
+      "score": 1.0,
+      "detail": "7/7",
+      "decode_tps": 39.25364361616961,
+      "wall_s": 1.54
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "writing",
+      "task_id": "write_concise",
+      "type": "judge_pairwise",
+      "score": 0.25,
+      "detail": "g1=tie g2=a -> 0.25",
+      "decode_tps": 40.14943620154214,
+      "wall_s": 23.82
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "writing",
+      "task_id": "write_reminder",
+      "type": "judge_pairwise",
+      "score": 1.0,
+      "detail": "g1=a g2=b -> 1.0",
+      "decode_tps": 39.1555399673926,
+      "wall_s": 12.48
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "writing",
+      "task_id": "write_recursion",
+      "type": "judge_pairwise",
+      "score": 0.75,
+      "detail": "g1=a g2=tie -> 0.75",
+      "decode_tps": 38.67618909077475,
+      "wall_s": 19.77
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "instruction",
+      "task_id": "inst_bullets",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 39.35494222391751,
+      "wall_s": 1.41
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "instruction",
+      "task_id": "inst_tagline",
+      "type": "ifeval",
+      "score": 0.5,
+      "detail": "1/2 ok; failed: ['contains_times']",
+      "decode_tps": 40.956973334279894,
+      "wall_s": 0.79
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "instruction",
+      "task_id": "inst_json",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 40.904256769654495,
+      "wall_s": 0.79
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "instruction",
+      "task_id": "inst_firewall",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 39.462657879648184,
+      "wall_s": 1.28
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "longcontext",
+      "task_id": "lc_needle",
+      "type": "exact",
+      "score": 1.0,
+      "detail": "answer 'ZF-8821' found",
+      "decode_tps": 44.040668411516,
+      "wall_s": 8.58
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "longcontext",
+      "task_id": "lc_multihop",
+      "type": "exact",
+      "score": 1.0,
+      "detail": "answer 'Cabinet 12' found",
+      "decode_tps": 44.91555874955084,
+      "wall_s": 5.99
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "coding",
+      "task_id": "code_rle",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 59.06259606061434,
+      "wall_s": 2.77
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "coding",
+      "task_id": "code_balanced",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 59.24811183673591,
+      "wall_s": 2.5
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "coding",
+      "task_id": "code_merge",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 58.84483762645909,
+      "wall_s": 4.38
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "coding",
+      "task_id": "code_wordfreq",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 58.65657206181921,
+      "wall_s": 5.86
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "reasoning",
+      "task_id": "reas_tank",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 0.5 want 0.5",
+      "decode_tps": 58.79503111433046,
+      "wall_s": 6.38
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "reasoning",
+      "task_id": "reas_train",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 5.5 want 5.5",
+      "decode_tps": 58.489364945504796,
+      "wall_s": 8.07
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "reasoning",
+      "task_id": "reas_interest",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 5624.32 want 5624.32",
+      "decode_tps": 58.43705284549031,
+      "wall_s": 8.36
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "reasoning",
+      "task_id": "reas_acid",
+      "type": "mc",
+      "score": 1.0,
+      "detail": "got B want B",
+      "decode_tps": 58.322352041419876,
+      "wall_s": 7.64
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "reasoning",
+      "task_id": "reas_syllogism",
+      "type": "mc",
+      "score": 1.0,
+      "detail": "got B want B",
+      "decode_tps": 58.17896697049887,
+      "wall_s": 6.8
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "agentic",
+      "task_id": "agent_weather",
+      "type": "tool_call",
+      "score": 1.0,
+      "detail": "name_ok=True args_ok=True",
+      "decode_tps": 60.53415336933097,
+      "wall_s": 0.92
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "agentic",
+      "task_id": "agent_decline",
+      "type": "tool_call",
+      "score": 1.0,
+      "detail": "correctly declined",
+      "decode_tps": 63.70053797999803,
+      "wall_s": 0.7
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "agentic",
+      "task_id": "agent_order_json",
+      "type": "json_schema",
+      "score": 1.0,
+      "detail": "9/9",
+      "decode_tps": 60.25473575640074,
+      "wall_s": 1.06
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "agentic",
+      "task_id": "agent_feedback_json",
+      "type": "json_schema",
+      "score": 1.0,
+      "detail": "7/7",
+      "decode_tps": 61.00520666176857,
+      "wall_s": 0.83
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "writing",
+      "task_id": "write_concise",
+      "type": "judge_pairwise",
+      "score": 1.0,
+      "detail": "g1=a g2=b -> 1.0",
+      "decode_tps": 58.702115169762735,
+      "wall_s": 15.73
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "writing",
+      "task_id": "write_reminder",
+      "type": "judge_pairwise",
+      "score": 1.0,
+      "detail": "g1=a g2=b -> 1.0",
+      "decode_tps": 59.49271869624228,
+      "wall_s": 12.73
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "writing",
+      "task_id": "write_recursion",
+      "type": "judge_pairwise",
+      "score": 0.5,
+      "detail": "g1=tie g2=tie -> 0.5",
+      "decode_tps": 59.01146911402374,
+      "wall_s": 18.12
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "instruction",
+      "task_id": "inst_bullets",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 60.89585749310289,
+      "wall_s": 0.75
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "instruction",
+      "task_id": "inst_tagline",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 60.87724104343591,
+      "wall_s": 0.73
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "instruction",
+      "task_id": "inst_json",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 60.97118385715323,
+      "wall_s": 0.71
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "instruction",
+      "task_id": "inst_firewall",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 59.93167788720858,
+      "wall_s": 0.99
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "longcontext",
+      "task_id": "lc_needle",
+      "type": "exact",
+      "score": 1.0,
+      "detail": "answer 'ZF-8821' found",
+      "decode_tps": 65.46461170133173,
+      "wall_s": 5.65
+    },
+    {
+      "model": "gemma4:e4b",
+      "category": "longcontext",
+      "task_id": "lc_multihop",
+      "type": "exact",
+      "score": 1.0,
+      "detail": "answer 'Cabinet 12' found",
+      "decode_tps": 70.51887790361481,
+      "wall_s": 3.42
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "coding",
+      "task_id": "code_rle",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 53.630949748845815,
+      "wall_s": 7.21
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "coding",
+      "task_id": "code_balanced",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 53.54869584528431,
+      "wall_s": 8.46
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "coding",
+      "task_id": "code_merge",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 53.52014645809149,
+      "wall_s": 12.34
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "coding",
+      "task_id": "code_wordfreq",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 53.72829600709214,
+      "wall_s": 6.05
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "reasoning",
+      "task_id": "reas_tank",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 0.5 want 0.5",
+      "decode_tps": 54.002286659325726,
+      "wall_s": 5.16
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "reasoning",
+      "task_id": "reas_train",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 5.5 want 5.5",
+      "decode_tps": 53.924476319801556,
+      "wall_s": 5.71
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "reasoning",
+      "task_id": "reas_interest",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 5624.32 want 5624.32",
+      "decode_tps": 53.623500030077615,
+      "wall_s": 9.89
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "reasoning",
+      "task_id": "reas_acid",
+      "type": "mc",
+      "score": 1.0,
+      "detail": "got B want B",
+      "decode_tps": 53.47567259642514,
+      "wall_s": 4.91
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "reasoning",
+      "task_id": "reas_syllogism",
+      "type": "mc",
+      "score": 1.0,
+      "detail": "got B want B",
+      "decode_tps": 53.72803866419601,
+      "wall_s": 6.02
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "agentic",
+      "task_id": "agent_weather",
+      "type": "tool_call",
+      "score": 1.0,
+      "detail": "name_ok=True args_ok=True",
+      "decode_tps": 54.18843662698951,
+      "wall_s": 1.83
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "agentic",
+      "task_id": "agent_decline",
+      "type": "tool_call",
+      "score": 1.0,
+      "detail": "correctly declined",
+      "decode_tps": 53.92395309434237,
+      "wall_s": 3.18
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "agentic",
+      "task_id": "agent_order_json",
+      "type": "json_schema",
+      "score": 1.0,
+      "detail": "9/9",
+      "decode_tps": 54.048965660440075,
+      "wall_s": 2.68
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "agentic",
+      "task_id": "agent_feedback_json",
+      "type": "json_schema",
+      "score": 1.0,
+      "detail": "7/7",
+      "decode_tps": 53.68656157155527,
+      "wall_s": 4.99
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "writing",
+      "task_id": "write_concise",
+      "type": "judge_pairwise",
+      "score": null,
+      "detail": "skipped: judge gpt-oss:20b same family as gpt-oss:20b",
+      "decode_tps": 54.001653800647645,
+      "wall_s": 3.04
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "writing",
+      "task_id": "write_reminder",
+      "type": "judge_pairwise",
+      "score": null,
+      "detail": "skipped: judge gpt-oss:20b same family as gpt-oss:20b",
+      "decode_tps": 53.78122871782165,
+      "wall_s": 5.42
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "writing",
+      "task_id": "write_recursion",
+      "type": "judge_pairwise",
+      "score": null,
+      "detail": "skipped: judge gpt-oss:20b same family as gpt-oss:20b",
+      "decode_tps": 53.586904507254076,
+      "wall_s": 9.45
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "instruction",
+      "task_id": "inst_bullets",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 53.726179897348466,
+      "wall_s": 7.63
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "instruction",
+      "task_id": "inst_tagline",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 53.94439344493205,
+      "wall_s": 5.72
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "instruction",
+      "task_id": "inst_json",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 53.79545873867301,
+      "wall_s": 5.15
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "instruction",
+      "task_id": "inst_firewall",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 53.679761678676876,
+      "wall_s": 7.52
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "longcontext",
+      "task_id": "lc_needle",
+      "type": "exact",
+      "score": 1.0,
+      "detail": "answer 'ZF-8821' found",
+      "decode_tps": 53.677543210422286,
+      "wall_s": 6.52
+    },
+    {
+      "model": "gpt-oss:20b",
+      "category": "longcontext",
+      "task_id": "lc_multihop",
+      "type": "exact",
+      "score": 1.0,
+      "detail": "answer 'Cabinet 12' found",
+      "decode_tps": 53.099906606634846,
+      "wall_s": 5.45
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "coding",
+      "task_id": "code_rle",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 74.71100890706019,
+      "wall_s": 1.96
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "coding",
+      "task_id": "code_balanced",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 74.92839953735698,
+      "wall_s": 1.62
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "coding",
+      "task_id": "code_merge",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 74.95433488619162,
+      "wall_s": 2.21
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "coding",
+      "task_id": "code_wordfreq",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 74.61070601923274,
+      "wall_s": 2.16
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "reasoning",
+      "task_id": "reas_tank",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 0.5 want 0.5",
+      "decode_tps": 74.69522015949298,
+      "wall_s": 2.46
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "reasoning",
+      "task_id": "reas_train",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 5.5 want 5.5",
+      "decode_tps": 74.5520759840971,
+      "wall_s": 2.88
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "reasoning",
+      "task_id": "reas_interest",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 5624.32 want 5624.32",
+      "decode_tps": 73.9780987661242,
+      "wall_s": 4.57
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "reasoning",
+      "task_id": "reas_acid",
+      "type": "mc",
+      "score": 1.0,
+      "detail": "got B want B",
+      "decode_tps": 74.48101346974987,
+      "wall_s": 3.48
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "reasoning",
+      "task_id": "reas_syllogism",
+      "type": "mc",
+      "score": 1.0,
+      "detail": "got B want B",
+      "decode_tps": 74.06586500501189,
+      "wall_s": 3.94
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "agentic",
+      "task_id": "agent_weather",
+      "type": "tool_call",
+      "score": 1.0,
+      "detail": "name_ok=True args_ok=True",
+      "decode_tps": 76.81573186188531,
+      "wall_s": 0.71
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "agentic",
+      "task_id": "agent_decline",
+      "type": "tool_call",
+      "score": 1.0,
+      "detail": "correctly declined",
+      "decode_tps": 82.79267209585886,
+      "wall_s": 0.53
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "agentic",
+      "task_id": "agent_order_json",
+      "type": "json_schema",
+      "score": 1.0,
+      "detail": "9/9",
+      "decode_tps": 77.04939347680572,
+      "wall_s": 0.82
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "agentic",
+      "task_id": "agent_feedback_json",
+      "type": "json_schema",
+      "score": 1.0,
+      "detail": "7/7",
+      "decode_tps": 76.10225969352534,
+      "wall_s": 0.92
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "writing",
+      "task_id": "write_concise",
+      "type": "judge_pairwise",
+      "score": 1.0,
+      "detail": "g1=a g2=b -> 1.0",
+      "decode_tps": 77.03047518174378,
+      "wall_s": 17.01
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "writing",
+      "task_id": "write_reminder",
+      "type": "judge_pairwise",
+      "score": 1.0,
+      "detail": "g1=a g2=b -> 1.0",
+      "decode_tps": 75.32971235639067,
+      "wall_s": 12.97
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "writing",
+      "task_id": "write_recursion",
+      "type": "judge_pairwise",
+      "score": 0.5,
+      "detail": "g1=tie g2=tie -> 0.5",
+      "decode_tps": 74.56015364856793,
+      "wall_s": 18.92
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "instruction",
+      "task_id": "inst_bullets",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 75.3318975432385,
+      "wall_s": 1.01
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "instruction",
+      "task_id": "inst_tagline",
+      "type": "ifeval",
+      "score": 0.5,
+      "detail": "1/2 ok; failed: ['contains_times']",
+      "decode_tps": 79.1045366451766,
+      "wall_s": 0.5
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "instruction",
+      "task_id": "inst_json",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 76.28627129658406,
+      "wall_s": 0.73
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "instruction",
+      "task_id": "inst_firewall",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 75.8323927765237,
+      "wall_s": 0.85
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "longcontext",
+      "task_id": "lc_needle",
+      "type": "exact",
+      "score": 1.0,
+      "detail": "answer 'ZF-8821' found",
+      "decode_tps": 59.901248513165434,
+      "wall_s": 4.77
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "category": "longcontext",
+      "task_id": "lc_multihop",
+      "type": "exact",
+      "score": 1.0,
+      "detail": "answer 'Cabinet 12' found",
+      "decode_tps": 77.86443801341863,
+      "wall_s": 2.99
+    }
+  ]
+}

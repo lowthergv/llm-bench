@@ -1,0 +1,17 @@
+# Models to benchmark now (one Ollama tag per line; # comments allowed).
+# Already installed on this machine:
+qwen3.5:latest
+gemma4:e4b
+# Pulling in the background (top shortlist picks that fit 48GB):
+gpt-oss:20b
+qwen3-coder:30b
+# --- expand to the full verified roster by uncommenting (see config/models.json) ---
+# qwen3.6:27b
+# qwen3.6:35b-a3b
+# devstral-small-2:24b
+# glm-4.7-flash
+# milkey/Seed-OSS-36B-Instruct:q4_K_M
+# gemma4:31b
+# mistral-small3.2:24b
+# phi4-reasoning:plus
+# deepseek-r1:32b

@@ -1,0 +1,271 @@
+{
+  "meta": {
+    "host": "MacBook Pro M4 Pro \u00b7 48GB",
+    "runtime": "Ollama 0.30.6 (MLX Metal backend)",
+    "date": "2026-06-17 23:39",
+    "ctx": 8192,
+    "temp": 0.0,
+    "judge": "none (writing unscored)",
+    "n_tasks": 22
+  },
+  "weights": {
+    "coding": 0.25,
+    "reasoning": 0.2,
+    "agentic": 0.2,
+    "writing": 0.15,
+    "instruction": 0.1,
+    "longcontext": 0.1
+  },
+  "summary": {
+    "qwen3.5:latest": {
+      "categories": {
+        "coding": 1.0,
+        "reasoning": 1.0,
+        "agentic": 1.0,
+        "instruction": 0.875,
+        "longcontext": 1.0
+      },
+      "overall": 0.9853,
+      "n_scored": 19,
+      "speed": {
+        "cold_load_s": 0.18,
+        "decode_tps": {
+          "mean": 37.59,
+          "stdev": 0.04,
+          "min": 37.57,
+          "max": 37.62
+        },
+        "prefill_tps": {
+          "mean": 437.3,
+          "stdev": 1.6,
+          "min": 436.18,
+          "max": 438.43
+        },
+        "resident_gb": 5.49,
+        "reps": 2
+      }
+    }
+  },
+  "records": [
+    {
+      "model": "qwen3.5:latest",
+      "category": "coding",
+      "task_id": "code_rle",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 37.79466655728675,
+      "wall_s": 4.03
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "coding",
+      "task_id": "code_balanced",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 37.80174416513564,
+      "wall_s": 3.23
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "coding",
+      "task_id": "code_merge",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 37.73647969319163,
+      "wall_s": 4.29
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "coding",
+      "task_id": "code_wordfreq",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 37.7247686441057,
+      "wall_s": 3.09
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "reasoning",
+      "task_id": "reas_tank",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 0.5 want 0.5",
+      "decode_tps": 36.80785801670183,
+      "wall_s": 14.6
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "reasoning",
+      "task_id": "reas_train",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 5.5 want 5.5",
+      "decode_tps": 32.0891109462993,
+      "wall_s": 12.19
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "reasoning",
+      "task_id": "reas_interest",
+      "type": "numeric",
+      "score": 1.0,
+      "detail": "got 5624.32 want 5624.32",
+      "decode_tps": 32.150132272700304,
+      "wall_s": 20.65
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "reasoning",
+      "task_id": "reas_acid",
+      "type": "mc",
+      "score": 1.0,
+      "detail": "got B want B",
+      "decode_tps": 31.88973446091841,
+      "wall_s": 11.67
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "reasoning",
+      "task_id": "reas_syllogism",
+      "type": "mc",
+      "score": 1.0,
+      "detail": "got B want B",
+      "decode_tps": 31.9355059582455,
+      "wall_s": 19.68
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "agentic",
+      "task_id": "agent_weather",
+      "type": "tool_call",
+      "score": 1.0,
+      "detail": "name_ok=True args_ok=True",
+      "decode_tps": 35.96755726334846,
+      "wall_s": 1.35
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "agentic",
+      "task_id": "agent_decline",
+      "type": "tool_call",
+      "score": 1.0,
+      "detail": "correctly declined",
+      "decode_tps": 35.957818210346694,
+      "wall_s": 1.06
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "agentic",
+      "task_id": "agent_order_json",
+      "type": "json_schema",
+      "score": 1.0,
+      "detail": "9/9",
+      "decode_tps": 33.80216228206848,
+      "wall_s": 1.63
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "agentic",
+      "task_id": "agent_feedback_json",
+      "type": "json_schema",
+      "score": 1.0,
+      "detail": "7/7",
+      "decode_tps": 34.65809334883827,
+      "wall_s": 1.7
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "writing",
+      "task_id": "write_concise",
+      "type": "judge_pairwise",
+      "score": null,
+      "detail": "writing not judged (pass --judge)",
+      "decode_tps": 35.05432544085196,
+      "wall_s": 0.99
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "writing",
+      "task_id": "write_reminder",
+      "type": "judge_pairwise",
+      "score": null,
+      "detail": "writing not judged (pass --judge)",
+      "decode_tps": 34.6196624951201,
+      "wall_s": 1.81
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "writing",
+      "task_id": "write_recursion",
+      "type": "judge_pairwise",
+      "score": null,
+      "detail": "writing not judged (pass --judge)",
+      "decode_tps": 32.142594142419995,
+      "wall_s": 4.62
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "instruction",
+      "task_id": "inst_bullets",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 32.6829427721672,
+      "wall_s": 1.66
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "instruction",
+      "task_id": "inst_tagline",
+      "type": "ifeval",
+      "score": 0.5,
+      "detail": "1/2 ok; failed: ['contains_times']",
+      "decode_tps": 38.21344501849531,
+      "wall_s": 0.85
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "instruction",
+      "task_id": "inst_json",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 38.18746992736743,
+      "wall_s": 0.85
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "instruction",
+      "task_id": "inst_firewall",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 32.544761042528116,
+      "wall_s": 1.5
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "longcontext",
+      "task_id": "lc_needle",
+      "type": "exact",
+      "score": 1.0,
+      "detail": "answer 'ZF-8821' found",
+      "decode_tps": 42.76532831553481,
+      "wall_s": 8.54
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "longcontext",
+      "task_id": "lc_multihop",
+      "type": "exact",
+      "score": 1.0,
+      "detail": "answer 'Cabinet 12' found",
+      "decode_tps": 43.778684158683134,
+      "wall_s": 6.08
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "defaults": { "num_ctx": 8192, "temperature": 0.0, "seed": 7 },
+  "categories": {
+    "coding":      { "file": "tasks/coding/tasks.jsonl",      "weight": 0.25, "think": false, "max_tokens": 1024 },
+    "reasoning":   { "file": "tasks/reasoning/tasks.jsonl",   "weight": 0.20, "think": false, "max_tokens": 2048 },
+    "agentic":     { "file": "tasks/agentic/tasks.jsonl",     "weight": 0.20, "think": false, "max_tokens": 400 },
+    "writing":     { "file": "tasks/writing/tasks.jsonl",     "weight": 0.15, "think": false, "max_tokens": 700 },
+    "instruction": { "file": "tasks/instruction/tasks.jsonl", "weight": 0.10, "think": false, "max_tokens": 400 },
+    "longcontext": { "file": "tasks/longcontext/tasks.jsonl", "weight": 0.10, "think": false, "max_tokens": 200, "num_ctx": 16384 }
+  }
+}

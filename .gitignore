@@ -1,0 +1,10 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# raw model outputs (regenerated on each run; reports/ is kept as sample results)
+store/
+
+.DS_Store

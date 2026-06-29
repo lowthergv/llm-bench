@@ -1,0 +1,27 @@
+{
+  "_comment": "Verified roster for MacBook Pro M4 Pro / 48GB (research mid-2026). 'fits' assumes ~36-40GB usable. Use these tags with run_roster.txt. Stretch models run only at the memory ceiling.",
+  "roster": [
+    { "rank": 1, "tag": "qwen3.6:27b", "category": "coding", "params": "27B dense", "quant": "Q6_K / MLX-6bit", "ram_gb": "25-30", "license": "Apache-2.0", "note": "Headline coder; 77.2% SWE-bench Verified. Multimodal." },
+    { "rank": 2, "tag": "qwen3.6:35b-a3b", "category": "agentic", "params": "35B/3B MoE", "quant": "Q4_K_M ~22GB", "ram_gb": "25-27", "license": "Apache-2.0", "note": "Hybrid attn -> tiny KV; top agentic/tool-use at ~3B-active speed." },
+    { "rank": 3, "tag": "qwen3-coder:30b", "category": "coding", "params": "30.5B/3.3B MoE", "quant": "Q4_K_M ~19GB", "ram_gb": "22-25", "license": "Apache-2.0", "note": "Fastest strong agentic coder; huge headroom. Everyday driver." },
+    { "rank": 4, "tag": "devstral-small-2:24b", "category": "agentic", "params": "24B dense", "quant": "Q8_0 ~26GB or Q4 ~15GB", "ram_gb": "27-29 (Q8)", "license": "Apache-2.0", "note": "Purpose-built agentic coder, 68% SWE-bench. Dense control vs MoE." },
+    { "rank": 5, "tag": "gpt-oss:20b", "category": "allrounder", "params": "20.9B/3.6B MoE", "quant": "native MXFP4", "ram_gb": "14-22", "license": "Apache-2.0", "note": "Clean tool-calls, configurable reasoning, tiny footprint. Default judge." },
+    { "rank": 6, "tag": "glm-4.7-flash", "category": "agentic", "params": "30B/3B MoE", "quant": "Q4_K_M ~19GB", "ram_gb": "20-24", "license": "MIT", "note": "60-85 tok/s, ~200K ctx, hybrid-thinking." },
+    { "rank": 7, "tag": "milkey/Seed-OSS-36B-Instruct:q4_K_M", "category": "agentic", "params": "36B dense", "quant": "Q4_K_M ~22GB", "ram_gb": "24-26", "license": "Apache-2.0", "note": "GQA -> cheap KV; long-context/agentic dense pick." },
+    { "rank": 8, "tag": "gemma4:31b", "category": "writing", "params": "30.7B dense", "quant": "Q4_K_M ~20GB / QAT", "ram_gb": "22-24", "license": "Apache-2.0", "note": "Top writing pick, 256K ctx; MLX recommended for speed on M4." },
+    { "rank": 9, "tag": "mistral-small3.2:24b", "category": "allrounder", "params": "24B dense", "quant": "Q5_K_M ~17GB", "ram_gb": "20-28", "license": "Apache-2.0", "note": "Lightest top-tier all-rounder; strong writing + JSON/tools." },
+    { "rank": 10, "tag": "phi4-reasoning:plus", "category": "reasoning", "params": "14B dense", "quant": "Q8_0 ~17GB", "ram_gb": "13-20", "license": "MIT", "note": "Best quality-per-GB reasoner; small-model point on the curve." },
+    { "rank": 11, "tag": "deepseek-r1:32b", "category": "reasoning", "params": "32B dense", "quant": "Q4_K_M ~20GB", "ram_gb": "22-26", "license": "MIT", "note": "Dedicated math/reasoning anchor; dense control vs MoE roster." }
+  ],
+  "stretch_optional": [
+    { "tag": "Unsloth Qwen3-Coder-Next 80B-A3B Q3_K_XL (GGUF via llama.cpp/LM Studio)", "why": "Best agentic coder that fits, but only at 3-bit ~36GB at the ceiling. Default Ollama tags (Q4 ~52GB, Q8 ~85GB) do NOT fit. Watch swap." },
+    { "tag": "llama3.3:70b-instruct-q3_K_S", "why": "Best-quality-that-fits anchor but ~7-9 tok/s; Q4 (43GB) busts macOS GPU cap." },
+    { "tag": "codestral:22b", "why": "FIM/inline-autocomplete only; MNPL non-commercial license; 32K ctx." },
+    { "tag": "qwen3:32b", "why": "Conservative prior-gen dense baseline/control (~12-22 tok/s)." }
+  ],
+  "dropped": [
+    { "name": "GLM-4.5-Air (106B/12B MoE)", "why": "Smallest acceptable quant (3-bit ~45-47GB) exceeds 48GB usable." },
+    { "name": "GLM-5.1-32B 'dense'", "why": "FABRICATED by an early research pass — no 32B dense exists; real GLM-5.1 is 754B MoE needing 200GB+." },
+    { "name": "Llama 3.3 70B at Q4", "why": "43GB busts macOS ~36GB GPU working-set cap once KV is added." }
+  ]
+}

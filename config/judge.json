@@ -1,0 +1,4 @@
+{
+  "local_judge": "gpt-oss:20b",
+  "note": "Writing is scored pairwise vs a frozen baseline with two-game position swap. If ANTHROPIC_API_KEY is set, a Claude judge is used (recommended: different family from every local contestant). Otherwise the local_judge model is used and any contestant from the SAME family as the judge is skipped to avoid self-enhancement bias. Calibrate the judge against ~20-30 human labels before trusting absolute numbers."
+}

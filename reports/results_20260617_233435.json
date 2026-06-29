@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "host": "MacBook Pro M4 Pro \u00b7 48GB",
+    "runtime": "Ollama 0.30.6 (MLX Metal backend)",
+    "date": "2026-06-17 23:34",
+    "ctx": 8192,
+    "temp": 0.0,
+    "judge": "none (writing unscored)",
+    "n_tasks": 6
+  },
+  "weights": {
+    "coding": 0.25,
+    "reasoning": 0.2,
+    "agentic": 0.2,
+    "writing": 0.15,
+    "instruction": 0.1,
+    "longcontext": 0.1
+  },
+  "summary": {
+    "qwen3.5:latest": {
+      "categories": {
+        "coding": 1.0,
+        "reasoning": 0.0,
+        "agentic": 1.0,
+        "instruction": 1.0,
+        "longcontext": 1.0
+      },
+      "overall": 0.7647,
+      "n_scored": 5,
+      "speed": {
+        "cold_load_s": 3.28,
+        "decode_tps": {
+          "mean": 36.95,
+          "stdev": 0.0,
+          "min": 36.95,
+          "max": 36.95
+        },
+        "prefill_tps": {
+          "mean": 434.15,
+          "stdev": 0.0,
+          "min": 434.15,
+          "max": 434.15
+        },
+        "resident_gb": 5.49,
+        "reps": 1
+      }
+    }
+  },
+  "records": [
+    {
+      "model": "qwen3.5:latest",
+      "category": "coding",
+      "task_id": "code_rle",
+      "type": "code_function",
+      "score": 1.0,
+      "detail": "pass",
+      "decode_tps": 37.146653259316466,
+      "wall_s": 4.11
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "reasoning",
+      "task_id": "reas_tank",
+      "type": "numeric",
+      "score": 0.0,
+      "detail": "no number parsed",
+      "decode_tps": 36.96510785015433,
+      "wall_s": 42.04
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "agentic",
+      "task_id": "agent_weather",
+      "type": "tool_call",
+      "score": 1.0,
+      "detail": "name_ok=True args_ok=True",
+      "decode_tps": 39.09870957967258,
+      "wall_s": 1.26
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "writing",
+      "task_id": "write_concise",
+      "type": "judge_pairwise",
+      "score": null,
+      "detail": "writing not judged (pass --judge)",
+      "decode_tps": 39.43598652077981,
+      "wall_s": 0.94
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "instruction",
+      "task_id": "inst_bullets",
+      "type": "ifeval",
+      "score": 1.0,
+      "detail": "2/2 ok",
+      "decode_tps": 38.399621911415025,
+      "wall_s": 1.43
+    },
+    {
+      "model": "qwen3.5:latest",
+      "category": "longcontext",
+      "task_id": "lc_needle",
+      "type": "exact",
+      "score": 1.0,
+      "detail": "answer 'ZF-8821' found",
+      "decode_tps": 42.67433991940646,
+      "wall_s": 8.52
+    }
+  ]
+}
