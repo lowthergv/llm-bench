@@ -8,3 +8,6 @@ venv/
 store/
 
 .DS_Store
+
+# generated ASR audio corpus
+asr-corpus/

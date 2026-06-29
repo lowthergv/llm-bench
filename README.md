@@ -5,6 +5,17 @@ following, and long-context**, plus **speed** (decode/prefill tok/s, cold-load,
 resident RAM). Pure standard-library Python — no `pip install` needed. Drives
 **Ollama** over its HTTP API. Full rationale in [`PLAN.md`](PLAN.md).
 
+## Two halves: general capability + the evals behind Tact
+
+The suite below ranks models on **general** capability and speed. The
+[`domain/`](domain/) folder is the other half — the **task-specific** evals I ran
+to choose the models that ship in
+[Tact](https://github.com/lowthergv/note-helper), a local-first clinical-note
+tool for ABA clinics: clinical-note quality (does it invent anything?), on-device
+ASR for dictation (Parakeet beats Whisper — faster and zero hallucinated words),
+and a concurrency check. All inputs synthetic, no PHI. See
+[`domain/README.md`](domain/README.md).
+
 ## Requirements
 - Ollama running (`ollama serve`; check: `curl localhost:11434/api/version`)
 - Python 3.9+ (stdlib only)
